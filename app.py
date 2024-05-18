@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 import pickle
-#import nltk
+import nltk
 #nltk.download("popular")
 import numpy
 import streamlit as st
