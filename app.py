@@ -27,8 +27,8 @@ email_text = st.text_area("Enter the email text here:")
 
 if st.button('Predict'):
     email_input = feature_extraction.transform(email_text)
-    prediction = model.predict([email_input])
-    prediction_proba = model.predict_proba([email_text])
+    prediction = selectmodel.predict([email_input])
+    prediction_proba =selectmodel.predict_proba([email_input])
 
     st.write(f"Predicted Class: {'Spam' if prediction[0] == 1 else 'Ham'}")
     st.write("Prediction Probability:")
