@@ -9,8 +9,8 @@ from sklearn.metrics import accuracy_score
 import pickle
 #import nltk
 #nltk.download("popular")
-#import numpy
-#import streamlit as st
+import numpy
+import streamlit as st
 from sklearn.metrics import confusion_matrix
 
 #with open('prediction_on_training_data.pkl', 'rb') as file:
@@ -19,7 +19,7 @@ from sklearn.metrics import confusion_matrix
 
 selectmodel = LogisticRegression()
 
-st.title ("Email Spam Prediction")
+st.title ("Email Spam Prediction Project")
 st.write("""
 This app uses a Logistic Regression classifier to predict whether an email is spam or ham.
 """)
